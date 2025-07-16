@@ -16,7 +16,7 @@ def simulate_rpsf(graph, source, target):
 if __name__ == '__main__':
     # Create a graph representing the Triad Matrix
     G = nx.Graph()
-    G.add_edges_from([(0, 1), (0, 2), (1, 3), (1, 4), (2, 5), (2, 6)])
+    G.add_edges_from([(0, 1), (0, 2), (1, 3), (1, 4), (2, 5), (2, 6), (4, 6)])
 
     # Simulate the RPSF
     is_valid = simulate_rpsf(G, 0, 6)
